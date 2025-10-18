@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Testiyritys Oy</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- <link rel="stylesheet" href="./css/dark.css"> -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        </script>
+    </head>
+
+    <body class="container mt-4">
+
+        <nav
+            class="navbar navbar-expand-sm navbar-dark bg-dark mb-4 shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#" onclick="naytaSivu('etusivu')">TestiYritys</a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                onclick="naytaSivu('etusivu')"
+                                aria-current="page">Etusivu
+                                <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                onclick="naytaSivu('esittely')">Yritysesittely</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                onclick="naytaSivu('yhteystiedot')">Yhteystiedot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                onclick="naytaSivu('henkilokunta')">Henkilökunta</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <div class="text-end mb-1 me-3">
+                            <!-- <button class="btn btn-outline-secondary btn-sm" id="Nappi" onclick="vaihdaTeema()">🌗 Vaihda teema</button> -->
+                            <button class="btn btn-dark" id="btnUser" onclick="vaihdaKayttaja()" title="Vaihda käytäjä">
+                                <i class="bi bi-person me-3"></i>
+                                <span id="textUser">Vierailija</span>
+                            </button>
+                        </div> 
+                        <div class="text-end mb-1">
+                            <!-- <button class="btn btn-outline-secondary btn-sm" id="teemaNappi" onclick="vaihdaTeema()">🌗 Vaihda teema</button> -->
+                            <button class="btn btn-sm" id="teemaNappi" onclick="vaihdaTeema()" title="Vaihda teema"></button>
+                        </div> 
+                    </form>
+            </div>
+        </nav>
+
+        <div id="main_alue" class="mb-5"></div>
+
+        <div id="chat" class="card d-none d-md-block border-dark shadow"
+            style="position: fixed; bottom: 20px; right: 20px; width: 300px; z-index: 1000;">
+            <div class="card-header bg-dark text-white py-2">
+                💬 Asiakaspalvelu chat
+            </div>
+            <div class="card-body p-2">
+                <div id="chatbox" class="border p-2 mb-2"
+                    style="height: 180px; overflow-y: auto;"></div>
+                <div class="input-group input-group-sm">
+                    <input type="text" id="chatInput" class="form-control"
+                        placeholder="Kirjoita viesti...">
+                    <button class="btn btn-primary"
+                        onclick="lahetaViesti()">➤</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+    </body>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">© 2025 Testiyritys Oy</p>
+            <p class="mb-0">Esimerkkikatu 1, 10100 Kaupunki |
+                info@testiyritys.fi
+                | 012 345 6789</p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i
+                        class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white"><i
+                        class="bi bi-linkedin"></i></a>
+            </div>
+        </footer>
+
+    </html>    

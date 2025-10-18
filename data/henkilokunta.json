@@ -1,0 +1,7 @@
+[
+  { "nimi": "Anna Virtanen", "tehtava": "Toimitusjohtaja", "email": "anna@yritys.fi" },
+  { "nimi": "Mikko Mäkinen", "tehtava": "Myyntipäällikkö", "email": "mikko@yritys.fi" },
+  { "nimi": "Laura Lehtonen", "tehtava": "Markkinointi", "email": "laura@yritys.fi" },
+  { "nimi": "Jari Järvinen", "tehtava": "Ohjelmistokehittäjä", "email": "jari@yritys.fi" },
+  { "nimi": "Sari Saarinen", "tehtava": "Asiakaspalvelu", "email": "sari@yritys.fi" }
+]

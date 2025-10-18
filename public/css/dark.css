@@ -1,0 +1,81 @@
+/* Dark-mode styles */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .card,
+.dark-mode .navbar,
+.dark-mode .list-group-item {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+.dark-mode .btn {
+  border-color: #888;
+}
+
+.dark-mode a {
+  color: #aad;
+}
+
+body.dark-mode #chat {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+body.dark-mode #chat .card-header {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+body.dark-mode #chat .card-body {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode #chatbox {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+body.dark-mode #chatInput {
+  background-color: #333;
+  color: #f1f1f1;
+  border-color: #555;
+}
+
+body.dark-mode #chat button {
+  background-color: #444;
+  color: #f1f1f1;
+  border-color: #666;
+}
+
+body.dark-mode table {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+body.dark-mode th,
+body.dark-mode td {
+  border-color: #555;
+}
+
+body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .form-control {
+  background-color: #333;  
+  color: #f1f1f1;
+  border-color: #555;
+}
+
+body.dark-mode .form-control::placeholder,
+body.dark-mode #chatInput::placeholder {
+  color: #bbb;
+}   
