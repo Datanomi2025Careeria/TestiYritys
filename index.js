@@ -33,8 +33,8 @@ io.on('connection', (socket) => {
 });
 
 // Käynnistää palvelimen
-//const PORT = 3000;
-const PORT = "https://testiyritys.onrender.com";
+const PORT = 3000;
+//const PORT = "https://testiyritys.onrender.com";
 server.listen(PORT, () => {
   console.log(`Palvelin käynnissä at http://localhost:${PORT}/?#`);
 });
